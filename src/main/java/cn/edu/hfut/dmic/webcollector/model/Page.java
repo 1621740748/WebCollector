@@ -163,7 +163,11 @@ public class Page implements MetaGetter, MetaSetter<Page>{
         Links links = new Links().addFromElement(doc(),parseImg);
         return links;
     }
-
+    public Links linkscssAndjsAnsImg() {
+        Links links = new Links().addFromElementIncludeImgAndJsAndCss(doc());
+        return links;
+    }
+   
     public Links links() {
         return links(false);
     }

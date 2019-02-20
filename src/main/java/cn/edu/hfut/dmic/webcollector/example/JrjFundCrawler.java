@@ -68,7 +68,8 @@ public class JrjFundCrawler extends BreadthCrawler {
     @Override
     public void visit(Page page, CrawlDatums next) {
         if (page.matchUrl("http://fund.jrj.com.cn/.*")) {
-        	Links ls=page.links(true);
+        	System.out.println("--------------------------------------");
+        	Links ls=page.linkscssAndjsAnsImg();
             Iterator<String> it=ls.iterator();
             while(it.hasNext()) {
             	String url=it.next();

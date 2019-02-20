@@ -102,7 +102,12 @@ public class Links implements Iterable<String> {
         }
         return this;
     }
-
+    public Links addFromElementIncludeImgAndJsAndCss(Element ele) {
+        add(ele.select("link[href]").eachAttr("abs:href"));
+        add(ele.select("img[src]").eachAttr("abs:src"));
+        add(ele.select("script[src]").eachAttr("abs:src"));
+        return this;
+    }
 
 
     /**
