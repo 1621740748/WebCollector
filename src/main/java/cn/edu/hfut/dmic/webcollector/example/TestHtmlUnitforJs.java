@@ -2,7 +2,7 @@ package cn.edu.hfut.dmic.webcollector.example;
 
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class TesttttHtmlUnitforJs {
+public class TestHtmlUnitforJs {
 
 	public static void main(String[] args) {
         
